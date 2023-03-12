@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSX Hello World</title>
+  </head>
+  <body>
+    <script src="../../frontend/js/react.development.js" crossorigin></script>
+    <script
+      src="../../frontend/js/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="../../frontend/js/babel.min.js" crossorigin></script>
+    <div id="app"></div>
+    <script type="text/babel">
+      const helloWorldHeading = <h1>Hello from React</h1>;
+      const container = document.getElementById('app');
+      const root = ReactDOM.createRoot(container);
+      root.render(helloWorldHeading);
+    </script>
+  </body>
+</html>
