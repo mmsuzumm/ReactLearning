@@ -2,7 +2,7 @@ export default function Person(props) {
   const { name, age, email, picture } = props;
   return (
     <div className="person">
-      <img src={picture} />
+      <img src={picture} alt="" />
       <h2>
         {name} {age}
       </h2>

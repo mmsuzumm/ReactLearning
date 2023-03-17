@@ -1,13 +1,15 @@
 import './App.css';
-import RandomNumber from './components/RandomNumber/RandomNumber';
-import ClickCounter from './components/Counter/ClickCounter';
-import PetsInfo from './components/PetInfo/PetsInfo';
-import Persons from './components/Persons/Persons';
+import RandomNumber from './components/randomNumber/RandomNumber';
+import ClickCounter from './components/counter/ClickCounter';
+import PetsInfo from './components/petInfo/PetsInfo';
+import Persons from './components/persons/Persons';
 import Login from './components/auth/Login';
+import GetTodo from './components/todoList/GetTodo';
 
 function App() {
   return (
     <div className="App">
+      <GetTodo />
       <Login />
       <Persons />
       <RandomNumber range={1000} />

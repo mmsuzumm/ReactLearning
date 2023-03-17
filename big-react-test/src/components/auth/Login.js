@@ -26,7 +26,7 @@ export default function Login() {
         <input
           type="password"
           value={data.password}
-          onChange={(event) => handleInputChange(event, 'username')}
+          onChange={(event) => handleInputChange(event, 'password')}
         />
         <button type="submit">Login</button>
       </form>

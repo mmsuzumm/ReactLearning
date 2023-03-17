@@ -1,6 +1,5 @@
 export default function PetInfo(props) {
   const { pet, age, hasPet } = props;
-  console.log(pet, age, hasPet);
   return hasPet ? (
     <h1>{`${pet} is ${age} years old`}</h1>
   ) : (
