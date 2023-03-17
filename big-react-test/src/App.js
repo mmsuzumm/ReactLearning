@@ -1,27 +1,20 @@
-import { useState } from 'react';
 import './App.css';
-import PetInfo from './components/PetInfo';
-import RandomNumber from './components/RandomNumber';
-import Button from './components/Counter/Button';
-import Counter from './components/Counter/Counter';
+import RandomNumber from './components/randomNumber/RandomNumber';
+import ClickCounter from './components/counter/ClickCounter';
+import PetsInfo from './components/petInfo/PetsInfo';
+import Persons from './components/persons/Persons';
+import Login from './components/auth/Login';
+import GetTodo from './components/todoList/GetTodo';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
-
   return (
     <div className="App">
-      <Counter count={count} />
-      <Button onClick={incrementCount} />
-      <Button onClick={incrementCount} />
-      <Button onClick={incrementCount} />
+      <GetTodo />
+      <Login />
+      <Persons />
       <RandomNumber range={1000} />
-      <PetInfo pet="Cat" age={5} hasPet />
-      <PetInfo pet="Dog" age={3} hasPet />
-      <PetInfo hasPet={false} />
+      <ClickCounter />
+      <PetsInfo />
     </div>
   );
 }
