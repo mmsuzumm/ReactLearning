@@ -15,3 +15,33 @@ button {
   margin-top: 20px;
   cursor: pointer;
 }
+
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.person {
+  width: 15%;
+  border: 1px lawngreen solid;
+  border-radius: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.person > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+form {
+  font-size: 30px;
+}
+
+input {
+  margin: 15px;
+  padding: 10px;
+  font-size: 20px;
+}
