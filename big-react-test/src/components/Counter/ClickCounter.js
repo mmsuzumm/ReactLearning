@@ -19,7 +19,7 @@ export default function ClickCounter() {
     <>
       <Counter count={count} />;
       {buttonsText.map((text) => {
-        return <Button onClick={incrementCount} text={text} />;
+        return <Button key={text} onClick={incrementCount} text={text} />;
       })}
       {!!count && (
         <>

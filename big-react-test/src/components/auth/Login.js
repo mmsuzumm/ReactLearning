@@ -8,6 +8,10 @@ export default function Login() {
     console.log(data);
     alert(JSON.stringify(data));
   }
+
+  function handleInputChange(event, name) {
+    setData({ ...data, [name]: event.target.value });
+  }
   return (
     <>
       <h1>Login form</h1>
@@ -16,17 +20,13 @@ export default function Login() {
         <input
           type="text"
           value={data.username}
-          onChange={(event) =>
-            setData({ ...data, username: event.target.value })
-          }
+          onChange={(event) => handleInputChange(event, 'username')}
         />
         <label>Password: </label>
         <input
           type="password"
           value={data.password}
-          onChange={(event) =>
-            setData({ ...data, password: event.target.value })
-          }
+          onChange={(event) => handleInputChange(event, 'username')}
         />
         <button type="submit">Login</button>
       </form>
