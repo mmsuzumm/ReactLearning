@@ -1,0 +1,15 @@
+.post {
+  text-align: left;
+  background-color: rgba(0, 79, 139, 0.665);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color: rgb(175, 175, 175);
+  max-width: 60%;
+  margin: 25px auto;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+}
+.post > big {
+  font-weight: bold;
+}
